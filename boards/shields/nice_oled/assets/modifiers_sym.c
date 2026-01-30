@@ -9,6 +9,10 @@
 
 #include <lvgl.h>
 
+#if !defined(LV_IMG_CF_INDEXED_1BIT) && defined(LV_IMAGE_CF_INDEXED_1BIT)
+#define LV_IMG_CF_INDEXED_1BIT LV_IMAGE_CF_INDEXED_1BIT
+#endif
+
 #ifndef LV_ATTRIBUTE_MEM_ALIGN
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
